@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LiveLock | Interactive Smart Door Experience</title>
+
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; background: #f5f7f9; color: #222; }
+    header {
+      background: #0b0b0b;
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    header h1 { font-size: 42px; }
+    header p { color: #ccc; font-size: 18px; }
+
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      margin-bottom: 25px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    }
+
+    h2 { margin-bottom: 15px; }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+
+    .feature {
+      background: #eef1f4;
+      padding: 15px;
+      text-align: center;
+      border-radius: 10px;
+      font-weight: 600;
+    }
+
+    .price {
+      font-size: 32px;
+      font-weight: bold;
+      color: #007bff;
+    }
+
+    .qr {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .qr img {
+      width: 200px;
+    }
+
+    model-viewer {
+      width: 100%;
+      height: 450px;
+      background: #e9ecef;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>LiveLock™</h1>
+  <p>Interactive Smart Door Experience</p>
+</header>
+
+<section>
+
+  <div class="card">
+    <h2>The Problem</h2>
+    <p>
+      Many people experience physical limitations that make standard doors difficult to open and close.
+      Individuals with arthritis, carpal tunnel, limb differences, and mobility aids often face barriers
+      created by traditional door hardware and locking systems.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Our Solution</h2>
+    <p>
+      LiveLock™ is a smart interior door system designed for inclusive access. It uses voice commands,
+      facial recognition, fingerprint scanning, and palm pattern recognition to create hands-free access.
+      The smart panel and mobile app allow full customization, alerts, and remote control.
+    </p>
+
+    <h3 style="margin-top:20px;">Materials</h3>
+    <ul>
+      <li>Solid core composite door</li>
+      <li>Recycled aluminum inner frame</li>
+      <li>Tempered smart glass touch panel</li>
+      <li>Integrated biometric sensor modules</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Scan to View the Model</h2>
+    <div class="qr">
+      <img src="qr.png" alt="LiveLock QR Code">
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Interactive 3D Model</h2>
+
+    <!-- Change model.glb to your real file name later -->
+    <model-viewer 
+      src="model.glb"
+      camera-controls 
+      auto-rotate
+      ar>
+    </model-viewer>
+  </div>
+
+  <div class="card">
+    <h2>Product Features</h2>
+    <div class="features">
+      <div class="feature">Voice Activated Controls</div>
+      <div class="feature">Facial Recognition</div>
+      <div class="feature">Fingerprint Scanner</div>
+      <div class="feature">Palm Recognition</div>
+      <div class="feature">Emergency Auto Unlock</div>
+      <div class="feature">Bluetooth Coffee Trigger</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Suggested Price</h2>
+    <p class="price">$2,499 CAD</p>
+  </div>
+
+</section>
+
+</body>
+</html>
